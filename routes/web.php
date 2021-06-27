@@ -28,4 +28,4 @@ Route::get('home',[HomeController::class,'home'])->name('home');
 
 Route::get('register',[RegisterController::class,'register'])->name('register');
 Route::post('register',[RegisterController::class,'store'])->name('store.user');
-
+dd("hello");

@@ -1,14 +1,16 @@
 @extends('layouts.layouts')
 
 @section('content')
-@push('style')
+{{-- @push('style')
 <link rel="stylesheet" href="{{asset('css/loginform.css')}}">
-@endpush
+@endpush --}}
 <h2>Login Form</h2>
+
 @if(session()->has('error'))
                    <div class="alert alert-danger">
                         {{ session()->get('error') }}
                     </div>
+
                 @endif
 <form action="{{route('auth')}}" method="post">
 

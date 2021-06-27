@@ -1,9 +1,9 @@
 @extends('layouts.layouts')
 
 @section('content')
-{{-- @push('style')
+@push('style')
 <link rel="stylesheet" href="{{asset('css/loginform.css')}}">
-@endpush --}}
+@endpush
 <h2>Login Form</h2>
 
 @if(session()->has('error'))
